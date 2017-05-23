@@ -1,10 +1,10 @@
 {
-  "name": "yafun.chart.js",
-  "version": "2.6.0",
+  "name": "yafun-chart-js",
+  "version": "2.6.1",
   "description": "Simple HTML5 charts using the canvas element. Includes Cascading Financial Chart Type.",
   "main": "src/chart.js",
   "repository": {
-  	"type": "git",
+    "type": "git",
     "url": "https://github.com/Yafuncl/Chart.js.git"
   },
   "author": "Diego Vargas <diego@yafun.cl>",
