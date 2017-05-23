@@ -1,14 +1,14 @@
 {
-  "name": "yafun.chart.js",
+  "name": "chart.js",
+  "homepage": "http://www.chartjs.org",
+  "description": "Simple HTML5 charts using the canvas element.",
   "version": "2.6.0",
-  "description": "Simple HTML5 charts using the canvas element. Includes Cascading Financial Chart Type.",
+  "license": "MIT",
   "main": "src/chart.js",
   "repository": {
-  	"type": "git",
-    "url": "https://github.com/Yafuncl/Chart.js.git"
+    "type": "git",
+    "url": "https://github.com/chartjs/Chart.js.git"
   },
-  "author": "Diego Vargas <diego@yafun.cl>",
-  "license": "MIT",
   "devDependencies": {
     "browserify": "^13.0.0",
     "browserify-istanbul": "^0.2.1",
@@ -43,6 +43,9 @@
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0",
     "yargs": "^5.0.0"
+  },
+  "spm": {
+    "main": "Chart.js"
   },
   "dependencies": {
     "chartjs-color": "^2.1.0",

@@ -22,6 +22,7 @@ require('./elements/element.arc')(Chart);
 require('./elements/element.line')(Chart);
 require('./elements/element.point')(Chart);
 require('./elements/element.rectangle')(Chart);
+require('./elements/element.candlestick')(Chart);
 
 require('./scales/scale.linearbase.js')(Chart);
 require('./scales/scale.category')(Chart);
@@ -29,6 +30,7 @@ require('./scales/scale.linear')(Chart);
 require('./scales/scale.logarithmic')(Chart);
 require('./scales/scale.radialLinear')(Chart);
 require('./scales/scale.time')(Chart);
+require('./scales/scale.financialLinear')(Chart);
 
 // Controllers must be loaded after elements
 // See Chart.core.datasetController.dataElementType
@@ -38,6 +40,7 @@ require('./controllers/controller.doughnut')(Chart);
 require('./controllers/controller.line')(Chart);
 require('./controllers/controller.polarArea')(Chart);
 require('./controllers/controller.radar')(Chart);
+require('./controllers/controller.financial')(Chart);
 
 require('./charts/Chart.Bar')(Chart);
 require('./charts/Chart.Bubble')(Chart);
@@ -46,6 +49,7 @@ require('./charts/Chart.Line')(Chart);
 require('./charts/Chart.PolarArea')(Chart);
 require('./charts/Chart.Radar')(Chart);
 require('./charts/Chart.Scatter')(Chart);
+require('./charts/Chart.Financial')(Chart);
 
 // Loading built-it plugins
 var plugins = [];
@@ -60,5 +64,5 @@ Chart.plugins.register(plugins);
 
 module.exports = Chart;
 if (typeof window !== 'undefined') {
-	window.Chart = Chart;
+  window.Chart = Chart;
 }
